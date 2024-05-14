@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q - 3</title>
+</head>
+
+<body>
+    <span style="font-size: 20px; font-weight: 600;">3 - Armstrong number list of a given numbe </span>
+    <h2 id="arms"></h2>
+
+
+    <!-- Armstrong number -->
+    <script>
+        let arm = 153;
+        let check = arm;
+        let sum = 0;
+        let armstrong = document.getElementById("arms");
+
+        while (arm != 0) {
+            armstrong.innerHTML += (arm + "<br/>");
+            //153 % 10 = 3
+            let digit = arm % 10;
+            armstrong.innerHTML += (digit + "<br/>");
+            //3 * 3 * 3 = 27
+            sum += digit ** 3;
+            armstrong.innerHTML += (sum + "<br/>");
+            //153 = 153 / 10 = 15
+            arm = parseInt(arm / 10);
+            armstrong.innerHTML += (arm + "<br/>");
+            armstrong.innerHTML += ("-----------" + "<br/>");
+        }
+        if (check == sum) {
+            armstrong.innerHTML += ("is an Armstrong number");
+        } else {
+            armstrong.innerHTML += ("is not an Armstrong number");
+        }
+    </script>
+</body>
+
+</html>

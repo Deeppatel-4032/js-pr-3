@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q - 5</title>
+</head>
+<body>
+    <span style="font-size: 20px; font-weight: 600;">5 - Fibonacci series of a given number list of a given number
+    </span>
+    <h2 id="fib"></h2>
+
+        <!-- Fibonacci series of a given number -->
+        <script>
+            let num = 50;
+            let a = 0;
+            let b = 1;
+            let c = 0;
+            let fib = document.getElementById("fib");
+    
+            fib.innerHTML = ("Fibonacci series number of " + num + " is :" + "<br/>");
+            while (c < num) {
+                fib.innerHTML += (c + " ,");
+                c = a + b;
+                a = b;
+                b = c;
+            }
+        </script>
+</body>
+</html>

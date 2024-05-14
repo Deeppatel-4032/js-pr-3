@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q - 2</title>
+</head>
+
+<body>
+    <span style="font-size: 20px; font-weight: 600;">2 - factorial of a given number</span>
+    <h2 id="fact"></h2>
+
+
+    <!-- factorial of a given number -->
+    <script>
+        let fact = 1;
+        let i = 1;
+        let factorial = document.getElementById("fact");
+
+        while (i <= 5) {
+            fact = fact * i; //1 * 2 * 3 * 4 * 5
+            i++;
+        }
+        factorial.innerHTML = (`Factorial of 5 is : ${fact}`);
+    </script>
+</body>
+
+</html>

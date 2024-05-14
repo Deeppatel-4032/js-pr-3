@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q - 4</title>
+</head>
+<body>
+    <span style="font-size: 20px; font-weight: 600;">4 - Palindrome number list of a given number </span>
+    <h2 id="pal"></h2>
+
+    <!-- Palindrome number -->
+    <script>
+        let pal = 1212121;
+        let temp = pal;
+        let palin = document.getElementById("pal");
+        let rev = 0;
+        while (temp > 0) {
+            //1212121 % 10 = 1
+            let digit = temp % 10;
+            // rev = 0 * 10 + 1 = 1
+            rev = rev * 10 + digit;
+            // 1212121 = 121212 / 10 = 12121
+            temp = parseInt(temp / 10);
+        }
+        if (pal == rev) {
+            palin.innerHTML = (`${pal} is a palindrome number`);
+        } else {
+            palin.innerHTML = (`${pal} is not a palindrome number`);
+        }
+    </script>
+
+</body>
+</html>

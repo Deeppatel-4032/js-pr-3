@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>q-1</title>
+</head>
+<body>
+    <span style="font-size: 20px; font-weight: 600;">1 - multiplication table</span>
+    <h2 id="mul"></h2>
+    
+    <!-- multiplication table  -->
+    <script>
+        let mul = 1;
+        let table = document.getElementById("mul");
+
+        while (mul <= 10) {
+
+            table.innerHTML += (`5 x ${mul} = ${5 * mul} <br/>`);
+            mul++;
+        }
+    </script>
+</body>
+</html>
