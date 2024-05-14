@@ -15,19 +15,21 @@
 
     <!-- Prime number  -->
     <script>
-        let no = 50;
-        let number = no;
-        let p = 2;
+        let num = 15;
+        let pri = 1;
         let prime = document.getElementById("prime");
 
-        while (p < number) {
-            if (no % p == 0) {
-                prime.innerHTML += (p);
-            }
-            p++;
-        }
-        prime.innerHTML += ("Prime number of " + number + " is :" + "<br/>");
+        prime.innerHTML += (`Prime number of ${num} is : <br/>`);
 
+        while (pri < num) {
+            if (num % pri == 0) {
+                prime.innerHTML += (`${pri} is not a prime number <br/>`);
+            } 
+            else {
+                prime.innerHTML += (`${pri} is a prime number <br/>`);
+            }
+            pri++;
+        }
     </script>
 </body>
 

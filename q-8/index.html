@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q - 8</title>
+</head>
+<body>
+    
+
+    <span style="font-size: 20px; font-weight: 600;">8 - Disarium number list of a given number
+    </span>
+    <h2 id="dis"></h2>
+
+    <!-- Disarium number -->
+    <script>
+        let num = 175;
+        let copy = num;
+        let sum = 0;
+        rem = 0;
+        let dis = document.getElementById("dis");
+
+        while(copy > 0) {
+            rem = copy % 10;
+            sum = sum + (rem ** 3);
+            copy = parseInt(copy / 10);
+        }
+
+        if (sum == num) {
+            dis.innerHTML = (`${num} is a disarium number`);
+        } else {
+            dis.innerHTML = (`${num} is not a disarium number`);
+        }
+    </script>
+</body>
+</html> 

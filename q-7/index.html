@@ -6,6 +6,22 @@
     <title>q - 7</title>
 </head>
 <body>
-    
+    <span style="font-size: 20px; font-weight: 600;">7 - magic number list of a given number
+    </span>
+    <h2 id="magic"></h2>
+
+    <script>
+        let num = 18;
+        let copy = num;
+        let sum = 0;
+        let magic = document.getElementById("magic");
+
+        while (copy > 0) {
+            let digit = copy % 10;
+            sum = sum + digit;
+            copy = parseInt(copy / 10);
+        }
+        magic.innerHTML = (`Magic number of ${num} is : ${sum}`);
+    </script>
 </body>
 </html>

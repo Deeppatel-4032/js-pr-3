@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q - 9</title>
+</head>
+<body>
+    <span style="font-size: 20px; font-weight: 600;">9 - add all the integers between 0 and 30 and display do while loop
+    </span>
+    <h2 id="doWhile"></h2>
+
+    <script>
+        let num = 5;
+        let i = 1;
+        let sum = 0;
+        let doWhile = document.getElementById("doWhile");
+
+        do {
+
+            sum += i;
+            i++;
+
+        } while (i < num);
+
+        doWhile.innerHTML = ("sum of number from 1 to 30 is : " + sum);
+        
+    </script>
+</body>
+</html>

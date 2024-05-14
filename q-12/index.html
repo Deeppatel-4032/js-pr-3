@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q - 12</title>
+</head>
+
+<body>
+    <span style="font-size: 20px; font-weight: 600;">12 - Write a JAVASCRIPT Program that displays 1+4+9+16+....+100 =
+        385 on one line using for loop.
+
+    </span>
+    <h2 id="doWhile"></h2>
+
+    <!-- <script>
+        // let i = 1;
+        let sum = 0;
+        let doWhile = document.getElementById("doWhile");
+
+        for(i = 1; i <= 10; i++) {
+
+            sum += i * i;
+        }
+        doWhile.innerHTML = ("1+4+9+16+....+100 = " + sum);
+    </script> -->
+    <script>
+        let sum = 0;
+        let doWhile = document.getElementById("doWhile");
+        for (let i = 1; i <= 10; i++) {
+            
+            //1*1 + 2*2 + 3*3 + 4*4 + 5*5 + 6*6 + 7*7 + 8*8 + 9*9 + 10*10
+            sum += i ** 2;
+        }
+        doWhile.innerHTML = ("1+4+9+16+....+100 = " + sum);
+    </script>
+
+</body>
+
+</html>

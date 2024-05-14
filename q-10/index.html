@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q - 10</title>
+</head>
+<body>
+    <span style="font-size: 20px; font-weight: 600;">10 - "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz" using do while loop
+    </span>
+    <h2 id="doWhile"></h2>
+    
+    <!-- Write a JAVASCRIPT Program which iterates the integers from 1 to 100. For multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz" using do while loop. -->
+
+    <script>
+        let i = 1;
+
+        let doWhile = document.getElementById("doWhile");
+
+        do {
+            if (i % 3 == 0 && i % 5 == 0) {
+                doWhile.innerHTML += (`${i} - FizzBuzz <br/>`);
+            }
+            else if (i % 3 == 0) {
+                doWhile.innerHTML += (`${i} - Fizz <br/>`);
+            }
+            else if (i % 5 == 0) {
+                doWhile.innerHTML += (`${i} - Buzz <br/>`);
+            }
+            else {
+                doWhile.innerHTML += (`${i} <br/>`);
+            }
+            i++;
+        } while (i <= 100);
+        
+    </script>
+</body>
+</html>
