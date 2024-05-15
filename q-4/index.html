@@ -12,16 +12,16 @@
     <!-- Palindrome number -->
     <script>
         let pal = 121;
-        let temp = pal;
+        let copy = pal;
         let palin = document.getElementById("pal");
         let rev = 0;
-        while (temp > 0) {
+        while (copy > 0) {
             //121 % 10 = 1
-            let digit = temp % 10;
+            let digit = copy % 10;
             // rev = 0 * 10 + 1 = 1
             rev = rev * 10 + digit;
             // 121 = 121 / 10 = 12121
-            temp = parseInt(temp / 10);
+            copy = parseInt(copy / 10);
         }
         if (pal == rev) {
             palin.innerHTML = (`${pal} is a palindrome number`);

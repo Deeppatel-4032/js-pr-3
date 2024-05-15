@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q - 14</title>
+</head>
+
+<body>
+    <span style="font-size: 20px; font-weight: 600;">14 - pattern using nested </span>
+    <h2 id="pettan"></h2>
+
+
+    <!-- pattern using nested -->
+    <!--    1
+            2 3
+            4 5 6
+            7 8 9 10
+            11 12 13 14 15 -->
+
+    <script>
+        let con = " ";
+        let num = 1;
+        let pattern = document.getElementById("pettan");
+
+        for (let i = 1; i <= 5; i++) {
+            for (let j = 1; j <= i; j++) {
+                con += num + " ";
+                num++;  
+            }
+            con += "<br/>";
+        }
+        pattern.innerHTML = (con);
+
+
+    </script>
+</body>
+
+</html>
